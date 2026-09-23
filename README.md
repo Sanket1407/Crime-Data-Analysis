@@ -21,3 +21,13 @@ a. Identify the top three reasons at the state level for juveniles (individuals 
 b. Determine the top ten states with the highest number of juvenile crime cases.
 13. Crime Rate Trends Over Time: Calculate the rate of change in total crimes for each state over the given timeline and identify states with significant increases or decreases.
 14. Crime Distribution by State: Compute and visualize the percentage share of each type of crime for all states to understand the distribution of criminal activities.
+
+Project Description
+
+CoverageIQ is a human-in-the-loop data preparation solution designed to simplify and standardize client shipment files before Coverage Analysis. Client shipment data can arrive in highly inconsistent Excel/CSV structures, with different sheet layouts, column names, date formats, period representations, facts, duplicate records and data-quality issues. CoverageIQ automates the most repetitive parts of this preparation process while keeping business-critical decisions transparent and reviewable.
+
+The solution automatically identifies relevant sheets and file patterns, profiles the dataset, detects period structures, standardizes date columns, recommends field mappings, transforms long or wide shipment structures into a consistent output format, and validates numerical correctness after transformation. It also supports negative-value handling, duplicate identification, flexible column selection/reordering, multi-tab inputs, audit reporting, and CSV fallback when Excel limits are exceeded—covering the key functional requirements defined for the challenge.
+
+CoverageIQ uses a modular Python architecture with Streamlit as the user interface. Pattern detection and rule-based recommendations reduce unnecessary manual configuration while maintaining human approval for ambiguous business mappings. The current prototype successfully transforms the provided Example 1 and Example 2 structures and provides partial support for Example 3, including multi-sheet and multi-measure scenarios. Rather than hardcoding only the supplied examples, the architecture is designed to be extended with additional patterns for more complex shipment structures.
+
+A key focus is data integrity: the solution compares source and transformed values, provides a validation status, generates an audit report, and preserves traceability of the preparation process. The objective is to reduce repetitive manual preparation effort, improve consistency, and provide a reusable foundation for scalable shipment-data standardization before downstream Coverage Analysis.
